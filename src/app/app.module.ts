@@ -20,11 +20,13 @@ import { PoEntryProductComponent } from './components/crm/crm-po/po-entry/po-ent
 import { CrmHomeComponent } from './components/crm/crm-home/crm-home.component';
 
 const routes:Routes=[
-  {
-    path:'login',component:LoginComponent
-  }
+  {path:'',redirectTo:'/login',pathMatch:'full'},
+  {path:'login',component:LoginComponent},
+  {path:'po-entry/PoEntryREequestSelection',component: PoEntryRequesterSelectionComponent},
+  {path:'po-entry/PoEntrySupportingInfo',component: PoEntrySupportingInfoComponent},
+  {path:'crm/crmFooter',component:CrmFooterComponent},
+ 
 ]
-
 @NgModule({
   declarations: [
     AppComponent,
