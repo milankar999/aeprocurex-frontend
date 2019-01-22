@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from'@angular/router';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -19,11 +22,7 @@ import { PoEntrySupportingInfoComponent } from './components/crm/crm-po/po-entry
 import { PoEntryProductComponent } from './components/crm/crm-po/po-entry/po-entry-product/po-entry-product.component';
 import { CrmHomeComponent } from './components/crm/crm-home/crm-home.component';
 
-const routes:Routes=[
-  {
-    path:'login',component:LoginComponent
-  }
-]
+
 
 @NgModule({
   declarations: [
@@ -47,7 +46,10 @@ const routes:Routes=[
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(routes)
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule, 
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
