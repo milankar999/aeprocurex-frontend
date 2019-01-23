@@ -20,12 +20,21 @@ import { PoEntryProductComponent } from './components/crm/crm-po/po-entry/po-ent
 import { CrmHomeComponent } from './components/crm/crm-home/crm-home.component';
 
 const routes:Routes=[
+<<<<<<< HEAD
   {path:'',redirectTo:'/login',pathMatch:'full'},
   {path:'login',component:LoginComponent},
   {path:'po-entry/PoEntryREequestSelection',component: PoEntryRequesterSelectionComponent},
   {path:'po-entry/PoEntrySupportingInfo',component: PoEntrySupportingInfoComponent},
   {path:'crm/crmFooter',component:CrmFooterComponent},
  
+=======
+    {path:'',redirectTo:'/login',pathMatch:'full'},
+    {path:'login',component:LoginComponent},
+    {path:'po-entry/PoEntryReceiverSelection',component: PoEntryReceiverSelectionComponent},
+    {path:'po-entry /PoEntrySupportingInfo',component: PoEntrySupportingInfoComponent},
+    {path:'crm/crmFooter',component:CrmFooterComponent},
+   
+>>>>>>> 5b5393f9f06059cc70faa10a0f9be7d7d7f658e1
 ]
 @NgModule({
   declarations: [
